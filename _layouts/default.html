@@ -48,20 +48,15 @@ function removeTransition(e) {
     
 
 <!-- keys -->
-<div class="keys">
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">Label</span>
-    </div>
-</div>
 
-<div class="keys">
-    <div data-key="66" class="key">
-      <kbd>B</kbd>
-      <span class="sound">Label</span>
-    </div>
-</div>
-
+    <ul>
+    {%% for posts in site.post %%}
+   
+        <li>  {{ post.title }} </li>
+    
+    {%% endfor %%}
+    </ul>        
+    
 <!-- sounds -->
 <audio data-key="71" src="https://raw.githubusercontent.com/Gordon325/drumkit/master/_uploads/sonic_-_rings.mp3"></audio>
 
