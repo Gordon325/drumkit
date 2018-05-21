@@ -55,12 +55,14 @@ function removeTransition(e) {
         <span class="sound"> {{ post.title }} </span>
       </div>
   </div>
-{% endfor %}      
     
 <!-- sounds -->
-<audio data-key="71" src="https://raw.githubusercontent.com/Gordon325/drumkit/master/_uploads/sonic_-_rings.mp3"></audio>
+<audio data-key="{{ post.keycode }}" src="{{ post.file }}"></audio>
+    
+{% endfor %}      
+    
 
-<audio data-key="66" src="https://raw.githubusercontent.com/Gordon325/drumkit/master/_uploads/sonic_air_bubble.mp3"></audio>
+
 
 </body>
 </html>
